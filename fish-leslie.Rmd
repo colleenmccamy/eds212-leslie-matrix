@@ -5,6 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 ## Overview
@@ -52,6 +53,18 @@ fish_year3 <- fish_leslie %*% fish_year2
 fish_year3
 
 ## ADD YOUR CODE TO PROJECT FOR YEARS 4, 5 & 6 HERE:
+
+fish_year4 <- fish_leslie %*% fish_year3
+fish_year4
+
+fish_year5 <- fish_leslie %*% fish_year4
+fish_year5
+
+fish_year6 <- fish_leslie %*% fish_year5
+fish_year6
+
+fish_data <- data.frame (c(fish_year1, fish_year2, fish_year3, fish_year4, fish_year5, fish_year6))
+
 
 
 ```
