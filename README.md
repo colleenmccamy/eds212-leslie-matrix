@@ -13,3 +13,5 @@ Example: A population of fish has four life stages: eggs (E), fry (F), juvenile 
 In this code, we'll see the Leslie matrix (projection matrix), and project the population structure over several years using the dot product. Remember this - we'll learn for loops in EDS 221!
 
 Edit through github
+
+Edit through RStudio
