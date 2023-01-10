@@ -65,7 +65,35 @@ fish_year6
 
 fish_data <- data.frame (c(fish_year1, fish_year2, fish_year3, fish_year4, fish_year5, fish_year6))
 
+## Leslie Matrix Example
 
+Model population changes using the same example from lecture.
+
+```{r}
+inscet_leslie <- matrix(c(0, 0, 600, 0.2, 0, 0, 0, 0.08, 0), nrow = 3, ncol = 3, byrow = TRUE)
+inscet_leslie
+```
+
+```{r}
+# Initial Condition Values (creating a vector with the )
+insect_y0 <- c(12000, 700, 500)
+```
+
+```{r}
+# Find the values of e, l, f at the next phase given that we had insect_y0
+insect_y1 <- inscet_leslie %*% insect_y0
+insect_y1
+```
+
+Estimating Populations at Each Life Stage at Year 2 and Year 3
+
+```{r}
+# Year 2 Vlues
+insect_y2 <- inscet_leslie %*% insect_y1
+insect_y2
+# Year 3
+insect_y3 <- inscet_leslie %*% insect_y2
+insect_y2
 
 ```
 
